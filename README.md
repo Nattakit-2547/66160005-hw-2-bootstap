@@ -1,1 +1,33 @@
 # 66160005-hw-2-bootstap
+
+- git checkout -b development
+- git add .
+- git commit -m "เริ่มสร้างโปรเจค"
+- git checkout -b feature/home-page
+- git commit -m "สร้าง Navbar"
+- git commit -m "สร้าง Hero Section"
+- git commit -m "สร้าง  Grid Section"
+- git commit -m "สร้าง   Footer"
+- git commit -m "เพิ่ม scriptJS"
+- git commit -m "เพิ่ม Style"
+- git checkout development
+- git checkout -b feature/about-page
+- git commit -m "สร้าง Navbar"
+- git commit -m "สร้าง Hero Section"
+- git commit -m "สร้าง Content Section"
+- git commit -m "สร้าง Footer"
+- git commit -m "เพิ่ม scriptJS"
+- git commit -m "เพิ่ม Style"
+- git checkout development
+- git checkout -b feature/contact-page
+- git commit -m "สร้าง Navbar"
+- git commit -m "สร้าง Hero Section"
+- git commit -m "สร้าง Contact From Section"
+- git commit -m "สร้าง Footer"
+- git commit -m "เพิ่ม scriptJS"
+- git commit -m "เพิ่ม Style"
+- git checkout development
+- git merge feature/home-page
+- git merge feature/place-page 
+- git merge feature/contact-page
+- git push origin development
