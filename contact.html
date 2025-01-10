@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ท่องเที่ยวสุพรรณ-ติดต่อ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+        body {
+            font-family: "Itim", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+         /* Navbar */
+         nav.navbar {
+            background-color: #ffd3b4; /* พาสเทลส้ม */
+        }
+
+        .navbar-brand, .nav-link {
+            color: #6a67ce !important; /* พาสเทลม่วง */
+        }
+
+        .navbar-brand:hover, .nav-link:hover {
+            color: #ffaaa7 !important; /* พาสเทลชมพู */
+        }
+
+        /* Contact Form Section */
+        .container h1 {
+            color: #6a67ce; /* พาสเทลม่วง */
+        }
+
+        .form-control {
+            background-color: #ffefd5; /* พาสเทลเหลือง */
+            border: 1px solid #ffd3b4;
+        }
+
+        .form-control:focus {
+            border-color: #ffaaa7; /* พาสเทลชมพู */
+            box-shadow: 0 0 0 0.25rem rgba(255, 170, 167, 0.5);
+        }
+
+        .btn-primary {
+            background-color: #6a67ce;
+            border-color: #6a67ce;
+        }
+
+        .btn-primary:hover {
+            background-color: #ffaaa7;
+            border-color: #ffaaa7;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffefd5; /* พาสเทลเหลือง */
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="contact.html">ท่องเที่ยวสุพรรณบุรี</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">ติดต่อทีมงาน Us</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">ชื่อของคุณ</label>
+                        <input type="text" class="form-control" id="name" placeholder="ชื่อ-นามสกุล" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="number" class="form-label">Your Number</label>
+                        <input type="number" class="form-control" id="number" placeholder="เบอร์โทรศัพท์" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="อีเมล" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="ข้อความ" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-3">
+        <p>© 2025 สัมผัสเสน่ห์สุพรรณบุรี - ดินแดนแห่งวัฒนธรรมและความงดงาม. สงวนลิขสิทธิ์</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

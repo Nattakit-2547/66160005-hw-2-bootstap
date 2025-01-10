@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ท่องเที่ยวสุพรรณบุรี-หน้าหลัก</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+        body {
+            font-family: "Itim", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        nav.navbar {
+        background: #ffd3b4; /* สีพาสเทลส้มอ่อน */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand, .nav-link {
+            color: #6a67ce !important; /* สีม่วงพาสเทล */
+            font-weight: bold;
+        }
+
+        .navbar-brand:hover, .nav-link:hover {
+            color: #ffaaa7 !important; /* สีชมพูพาสเทล */
+        }
+
+        .carousel-caption h5 {
+            background-color: rgba(255, 182, 193, 0.6); /* สีชมพูอ่อนโปร่งใส */
+            color: #444;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .card {
+            background-color: #e3fdfd; /* สีฟ้าพาสเทล */
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            color: #ffaaa7; /* สีชมพูพาสเทล */
+        }
+
+        .btn, .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: #d5aaff; /* สีม่วงพาสเทล */
+            border: none;
+        }
+
+        footer {
+            background: #ffefd5; /* สีเหลืองพาสเทล */
+            color: #444;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        h2 {
+            color: #6a67ce; /* สีม่วงพาสเทล */
+            font-weight: bold;
+        }
+
+        a {
+            color: #ffaaa7;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ffd3b4;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ท่องเที่ยวสุพรรณบุรี</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/ชุมชนบ้านแหลม.jpg" class="d-block w-100" alt="ชุมชนบ้านแหลม" style="max-height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>ยินดีต้อนรับสุพรรณบุรี</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/ตลาดสามชุก.jpg" class="d-block w-100" alt="ตลาดสามชุก" style="max-height: 500px; object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="images/หมู่บ้านมังกรสวรรค์.jpg" class="d-block w-100" alt="หมู่บ้านมังกรสวรรค์" style="max-height: 500px; object-fit: cover;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Grid Section -->
+    <div class="container mt-4">
+        <h2 class="text-center">แนะนำสถานที่ยอดนิยม</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card">
+            <img src="images/ตลาดสามชุก2.jpg" class="card-img-top" alt="ภาพสถานที่ 1">
+            <div class="card-body">
+                <h5 class="card-title">ตลาดสามชุก</h5>
+                <p class="card-text">มาสัมผัสถึงกลิ่นอายของความเป็นไทยแบบดั้งเดิมได้ที่นี่ค่ะ ตลาดสามชุก ตลาดร้อยปี ที่เรียกได้ว่าเป็น 
+                    พิพิธภัณฑ์ที่มีชีวิต เพราะในตลาดนั้นยังคงเสน่ห์ เอกลักษณ์ และวิถีชีวิตแบบไทยๆ ไว้ที่นี่ มีอาคารไม้โบราณ ที่เป็น
+                    สถาปัตยกรรมลายขนมปังขิง กว่า 19 ที่หาดูได้ยาก
+                </p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="images/ชุมชนบ้านแหลม2.jpg" class="card-img-top" alt="ภาพสถานที่ 2">
+            <div class="card-body">
+                <h5 class="card-title">ชุมชนบ้านแหลม</h5>
+                <p class="card-text">เป็นแหล่งท่องเที่ยว เรียนรู้ และเกิดเป็นสถานที่ท่องเที่ยวในชุมชน ที่จะทำให้นักท่อง
+                    เที่ยวเพลิดเพลินกับกิจกรรมดีๆ มากมายภายในชุมชน เช่น วิธีการทำธูปหอม ขั้นตอนการแปรรูปผักตบชวาให้กลาย
+                    เป็นผลิตภัณฑ์ต่างๆ พายเรือเล่นชมวิถีสองฝั่งแม่น้ำสุพรรณ หัดทำขนมไทยโบราณ รวมถึงที่นี่ยังมีโฮมสเตย์
+                    เรือนไทยริมน้ำให้เราได้สัมผัสใกล้ชิดกับบรรยากาศของชุมชนอีกด้วยค่ะ
+                </p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="images/หมู่บ้านมังกรสวรรค์2.jpg" class="card-img-top" alt="ภาพสถานที่ 3">
+            <div class="card-body">
+                <h5 class="card-title">หมู่บ้านมังกรสวรรค์</h5>
+                <p class="card-text">หมู่บ้านมังกรสวรรค์ ตั้งอยู่ภายใน อุทยานมังกรสวรรค์ และ พิพิธภัณฑ์ลูกหลานพันธุ์มังกร นั่นเองค่ะ ที่นี่
+                    เป็นหมู่บ้านจีนโบราณที่จำลอง ลี่เจียง เมืองเก่าแก่โบราณกว่า 800 ปีของประเทศจีนมาไว้ที่สุพรรณบุรีแห่งนี้อย่าง
+                    ประณีต ภายในหมู่บ้านมีบ้านเรือนที่ตกแต่งอย่างสวยงามด้วยสถาปัตยกรรมจีน มีร้านค้า ร้านอาหารต่างๆ มากมาย 
+                    ทำให้เป็น ที่เที่ยวสุพรรณบุรี อีกแห่งที่เป็นจุดแลนด์มาร์คยอดนิยมของนักท่องเที่ยว มีมุมสวยๆ ให้เดินเล่นถ่ายรูป 
+                    รวมไปถึงมีหอคอยชมวิวที่จะเห็นวิวสวยๆ ได้ถึง 360 องศาเลยทีเดียวค่ะ
+                </p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+            <img src="images/อุทยานมังกรสวรรค์2.jpg" class="card-img-top" alt="ภาพสถานที่ 4">
+            <div class="card-body">
+                <h5 class="card-title">อุทยานมังกรสวรรค์</h5>
+                <p class="card-text">อุทยานมังกรสวรรค์ หรือ พิพิธภัณฑ์ลูกหลานพันธุ์มังกร สร้างขึ้นในบริเวณเดียวกับ ศาลเจ้าพ่อหลักเมือง
+                    สุพรรณบุรี ค่ะ ภายในบอกเล่าเรื่องราวความเป็นมาของชาวจีนในประเทศไทย ประวัติศาสตร์และอารยธรรมจีน เพื่อ
+                    เป็นอนุสรณ์สัมพันธ์ทางการทูตไทย-จีน ครบ 20 ปีในปี พ.ศ. 2539 ค่ะ
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-3">
+        <p>© 2025 สัมผัสเสน่ห์สุพรรณบุรี - ดินแดนแห่งวัฒนธรรมและความงดงาม. สงวนลิขสิทธิ์</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
